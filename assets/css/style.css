@@ -16,7 +16,6 @@
 
   --serif: "Fraunces", Georgia, serif;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --hand: "Caveat", cursive;
 
   --radius: 24px;
   --max: 1160px;
@@ -730,15 +729,6 @@ div.cover {
   color: var(--body);
 }
 
-.signature {
-  font-family: var(--hand);
-  font-weight: 600;
-  font-size: 2.2rem;
-  color: var(--accent);
-  line-height: 1;
-  margin: 8px 0 28px;
-}
-
 .bio-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -957,9 +947,11 @@ div.cover {
   margin-bottom: 0;
 }
 
-.preface-sample .signature {
-  font-size: 1.9rem;
-  margin: 12px 0 0;
+.preface-sample .sig {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--ink);
 }
 
 .sponsor-row {
