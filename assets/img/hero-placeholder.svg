@@ -13,5 +13,5 @@
     <circle cx="0" cy="-80" r="70"/>
     <path d="M-130 170c0-80 58-140 130-140s130 60 130 140"/>
   </g>
-  <text x="1370" y="680" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="4" fill="#4d5e48">YOUR PHOTO — WIDE SHOT, YOU ON THE RIGHT</text>
+  <text x="1370" y="680" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="4" fill="#4d5e48">YOUR PHOTO HERE</text>
 </svg>

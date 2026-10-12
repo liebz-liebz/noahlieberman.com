@@ -21,10 +21,12 @@ Every spot that needs real content is marked with an `<!-- EDIT: ... -->` commen
   - **Home hero (desktop):** in `assets/css/style.css`, change `hero-placeholder.svg` to your wide photo
     (e.g. `hero.jpg`). A landscape shot with you on the right side works best — the name card and button sit on the left.
   - **Home hero (phones):** in the same file, change `portrait-placeholder.svg` to a portrait crop (e.g. `noah.jpg`).
-  - **Bio page:** change `src="assets/img/portrait-placeholder.svg"` in `bio.html`.
+  - **"Hi, I'm Noah" on the home page and the Bio page:** change `src="assets/img/portrait-placeholder.svg"`
+    in `index.html` and `bio.html`.
 - **Book covers:** the coloured covers are placeholders. Put cover images in `assets/img/` and replace a placeholder
   `<div class="cover cover--1">…</div>` with `<img class="cover" src="assets/img/my-cover.jpg" alt="Title cover">`.
-- **Buy links:** paste Amazon / Kindle URLs into the `href="#"` on each button in `books.html`.
+- **Buy links:** paste Amazon / Kindle URLs into the `href="#"` on each button in `books.html` (and the featured
+  book's "Buy on Amazon" button in `index.html`).
 - **Adding a book:** copy an `<article class="book">…</article>` block in `books.html` and edit it.
 - **Free ebooks:** put the file in `assets/books/` (e.g. `assets/books/free-book.pdf`) and point the download buttons at it.
 - **Socials:** paste your Instagram and LinkedIn URLs into the icon links (header and footer of each page).
