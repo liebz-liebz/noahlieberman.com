@@ -11,25 +11,24 @@ Author website for Noah Lieberman. Plain HTML + CSS — no build step, no framew
 | `advertisers.html` | Sponsored free-ebook program + enquiry form |
 | `bio.html` | Bio |
 
-Shared styles are in `assets/css/style.css`; the small script in `assets/js/main.js` handles the contact form.
+Shared styles are in `assets/css/style.css`; the small script in `assets/js/main.js` handles the phone menu and the contact form.
 
 ## Editing content
 
 Every spot that needs real content is marked with an `<!-- EDIT: ... -->` comment. Search for `EDIT:` to find them all.
 
 - **Photos:** put your photos in `assets/img/`, then:
-  - **Home hero (desktop):** in `assets/css/style.css`, change `hero-placeholder.svg` to your wide photo
-    (e.g. `hero.jpg`). A landscape shot with you on the right side works best — the name card and button sit on the left.
-  - **Home hero (phones):** in the same file, change `portrait-placeholder.svg` to a portrait crop (e.g. `noah.jpg`).
-  - **"Hi, I'm Noah" on the home page and the Bio page:** change `src="assets/img/portrait-placeholder.svg"`
-    in `index.html` and `bio.html`.
+  - **Home page banner:** in `assets/css/style.css`, change `photo-wide.svg` to your wide photo (e.g. `hero.jpg`).
+    It runs the full width of the screen; a shot with you on the right side works best, since the intro card sits on the left.
+  - **"About me" on the home page and the Bio page:** change `src="assets/img/photo-portrait.svg"` in `index.html`
+    and `bio.html` to a portrait photo (e.g. `assets/img/noah.jpg`).
 - **Book covers:** the covers are placeholders with the real titles. Save each cover in `assets/img/`
   (`god.jpg`, `fantasy.jpg`, `europe1.jpg`, `europe2.jpg`) and replace each placeholder `<div class="cover …">…</div>`
   with the `<img>` tag given in the `EDIT` comment right above it.
 - **Buy links:** paste the Amazon URLs into the `href="#"` on the Paperback / Kindle buttons in `books.html`.
 - **Free ebooks:** put the files in `assets/books/` (e.g. `assets/books/europe-1.pdf`) and point the "Free download"
   buttons at them (on `books.html` and the featured book on `index.html`).
-- **Socials:** paste your Instagram and LinkedIn URLs into the icon links (header and footer of each page).
+- **Socials:** paste your Instagram and LinkedIn URLs into the icon links (footer of each page, and the Bio page).
 - **Email:** the site uses `hello@noahlieberman.com` as a placeholder — find and replace it with your real address.
 - **Colours / fonts:** change the variables at the top of `assets/css/style.css`.
 
