@@ -23,12 +23,12 @@ Every spot that needs real content is marked with an `<!-- EDIT: ... -->` commen
   - **Home hero (phones):** in the same file, change `portrait-placeholder.svg` to a portrait crop (e.g. `noah.jpg`).
   - **"Hi, I'm Noah" on the home page and the Bio page:** change `src="assets/img/portrait-placeholder.svg"`
     in `index.html` and `bio.html`.
-- **Book covers:** the coloured covers are placeholders. Put cover images in `assets/img/` and replace a placeholder
-  `<div class="cover cover--1">…</div>` with `<img class="cover" src="assets/img/my-cover.jpg" alt="Title cover">`.
-- **Buy links:** paste Amazon / Kindle URLs into the `href="#"` on each button in `books.html` (and the featured
-  book's "Buy on Amazon" button in `index.html`).
-- **Adding a book:** copy an `<article class="book">…</article>` block in `books.html` and edit it.
-- **Free ebooks:** put the file in `assets/books/` (e.g. `assets/books/free-book.pdf`) and point the download buttons at it.
+- **Book covers:** the covers are placeholders with the real titles. Save each cover in `assets/img/`
+  (`god.jpg`, `fantasy.jpg`, `europe1.jpg`, `europe2.jpg`) and replace each placeholder `<div class="cover …">…</div>`
+  with the `<img>` tag given in the `EDIT` comment right above it.
+- **Buy links:** paste the Amazon URLs into the `href="#"` on the Paperback / Kindle buttons in `books.html`.
+- **Free ebooks:** put the files in `assets/books/` (e.g. `assets/books/europe-1.pdf`) and point the "Free download"
+  buttons at them (on `books.html` and the featured book on `index.html`).
 - **Socials:** paste your Instagram and LinkedIn URLs into the icon links (header and footer of each page).
 - **Email:** the site uses `hello@noahlieberman.com` as a placeholder — find and replace it with your real address.
 - **Colours / fonts:** change the variables at the top of `assets/css/style.css`.

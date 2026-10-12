@@ -269,8 +269,8 @@ p {
   position: absolute;
   left: -4px;
   right: -4px;
-  bottom: 7px;
-  height: 10px;
+  bottom: 0;
+  height: 8px;
   background: var(--pink);
   transform: scaleX(0);
   transform-origin: left;
@@ -1362,4 +1362,239 @@ div.cover {
 main > .band-pink:last-child,
 main > .band-blue:last-child {
   border-bottom: 0;
+}
+
+/* ---------- Title-styled cover placeholders ---------- */
+
+.cover--navy,
+.cover--indigo,
+.cover--gold {
+  text-align: left;
+}
+
+.cover--navy .cover-title,
+.cover--indigo .cover-title,
+.cover--gold .cover-title {
+  font-family: var(--font-head);
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.02;
+  font-size: clamp(1.15rem, 2.2vw, 1.75rem);
+}
+
+.cover--navy {
+  background: linear-gradient(180deg, #2c3d93 0 42%, #e9a35c 42% 100%);
+  color: var(--white);
+}
+
+.cover--navy .cover-title em {
+  display: block;
+  font-style: normal;
+  font-size: 0.62em;
+  color: #ffd84a;
+  margin-top: 0.3em;
+}
+
+.cover--navy .cover-author,
+.cover--indigo .cover-author {
+  color: var(--white);
+}
+
+.cover--indigo {
+  background: #3f4fae;
+  color: var(--white);
+}
+
+.cover--indigo .cover-title em {
+  font-style: normal;
+  color: #ffd84a;
+}
+
+.cover--gold {
+  background: linear-gradient(180deg, #fbfaf6, #e7ecf1);
+  color: var(--ink);
+  outline: 5px solid #c9a443;
+  outline-offset: -11px;
+  text-align: center;
+}
+
+.cover--gold .cover-title {
+  font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+}
+
+.cover--gold .cover-title small {
+  display: block;
+  font-size: 0.45em;
+  letter-spacing: 0.2em;
+  color: #a8852b;
+}
+
+.cover--gold .cover-author {
+  color: #8a6d22;
+}
+
+/* ---------- Home book grid: four across ---------- */
+
+.book-grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 44px;
+}
+
+a.book-tile {
+  text-decoration: none;
+  color: inherit;
+}
+
+.book-grid--4 .book-tile h3 {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1000px) {
+  .book-grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 56px 28px;
+  }
+}
+
+/* ---------- Books page: shop cards ---------- */
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.shop-card {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 32px;
+  align-items: center;
+  background: var(--white);
+  border: var(--border);
+  box-shadow: var(--shadow);
+  padding: 32px;
+  scroll-margin-top: 24px;
+}
+
+.shop-card .cover {
+  box-shadow: 5px 5px 0 var(--ink);
+}
+
+.shop-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.3em;
+}
+
+.formats {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.free-book {
+  scroll-margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-card {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .shop-card .cover {
+    width: 150px;
+  }
+}
+
+/* ---------- Past sponsors ---------- */
+
+.sponsor-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 340px));
+  justify-content: center;
+  gap: 28px;
+}
+
+.sponsor-card {
+  display: block;
+  background: var(--white);
+  border: var(--border);
+  box-shadow: var(--shadow);
+  padding: 30px 28px;
+  text-align: center;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.sponsor-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.sponsor-name {
+  font-family: var(--font-head);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--teal);
+  margin-bottom: 8px;
+}
+
+.sponsor-card--next {
+  background: transparent;
+  border-style: dashed;
+  box-shadow: none;
+  transition: background 0.15s;
+}
+
+.sponsor-card--next:hover {
+  background: var(--white);
+}
+
+@media (max-width: 640px) {
+  .sponsor-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Misc ---------- */
+
+.prose .socials {
+  margin-top: 28px;
+}
+
+.footer-note {
+  margin: 8px 0 0;
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+/* Size cover text relative to the cover itself, so it fits at any size */
+div.cover {
+  container-type: inline-size;
+}
+
+@supports (font-size: 1cqi) {
+  .cover--navy .cover-title,
+  .cover--indigo .cover-title {
+    font-size: 15cqi;
+  }
+
+  .cover--gold .cover-title {
+    font-size: 21cqi;
+  }
+
+  div.cover .cover-author {
+    font-size: max(0.55rem, 7cqi);
+    white-space: nowrap;
+  }
 }
