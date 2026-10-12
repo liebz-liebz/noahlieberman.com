@@ -1,5 +1,5 @@
 /* ==========================================================================
-   noahlieberman.com — site styles
+   noahlieberman.com: site styles
    Colours and fonts live in :root so the whole look can be changed in one place.
    ========================================================================== */
 
@@ -355,7 +355,7 @@ p {
 
 /* ---------- Home hero ----------
    The photo is assets/img/hero.jpg (assets/img/noah.jpg on phones). A shot with
-   you on the right side of the frame works best — the intro card sits on the left. */
+   you on the right side of the frame works best, since the intro card sits on the left. */
 
 .hero {
   position: relative;
