@@ -916,39 +916,38 @@ div.cover {
   color: var(--muted);
 }
 
-.preface-sample {
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 40px;
-  box-shadow: 0 24px 60px rgba(31, 27, 22, 0.08);
-  font-family: var(--serif);
-  font-variation-settings: "SOFT" 100;
-  font-size: 1.12rem;
-  line-height: 1.7;
-  color: var(--body);
+
+/* sample sponsored cover (Advertisers page) */
+.sample-cover {
+  margin: 0;
+  text-align: center;
+}
+
+.sample-cover .cover {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  transform: rotate(2deg);
+}
+
+.sample-cover figcaption {
+  margin-top: 28px;
+  font-size: 0.95rem;
+  color: var(--muted);
 }
 
 .preface-label {
+  display: block;
   font-family: var(--sans);
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 18px;
+  margin-bottom: 6px;
 }
 
-.preface-sample p:last-child {
-  margin-bottom: 0;
-}
 
-.preface-sample .sig {
-  font-family: var(--sans);
-  font-weight: 600;
-  font-size: 1rem;
-  color: var(--ink);
-}
 
 .sponsor-row {
   display: grid;
@@ -1064,11 +1063,6 @@ div.cover {
   }
 }
 
-@media (max-width: 480px) {
-  .preface-sample {
-    padding: 28px 24px;
-  }
-}
 
 /* ---------- Books page ---------- */
 
