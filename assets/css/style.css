@@ -368,7 +368,7 @@ p {
 .hero-photo {
   position: absolute;
   inset: 0;
-  background: #8aa4b8 url("../img/hero.jpg") right 35% / cover no-repeat;
+  background: #8aa4b8 url("../img/hero-v2.jpg") 60% 40% / cover no-repeat;
 }
 
 .hero .container {
@@ -378,7 +378,7 @@ p {
 
 .hero-card {
   position: relative;
-  max-width: 540px;
+  max-width: 470px;
   background: #fff;
   border-radius: var(--radius);
   padding: 36px 40px 34px;
@@ -393,21 +393,7 @@ p {
   margin-bottom: 26px;
 }
 
-.facts-inline {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 22px;
-  margin-top: 24px;
-  padding-top: 20px;
-  border-top: 1px solid var(--line);
-  font-size: 0.92rem;
-  color: var(--muted);
-}
 
-.facts-inline b {
-  color: var(--ink);
-  font-weight: 600;
-}
 
 @media (max-width: 900px) {
   .hero {
@@ -420,7 +406,7 @@ p {
     position: relative;
     height: 380px;
     /* phones use the portrait photo */
-    background-image: url("../img/noah.jpg");
+    background-image: url("../img/noah-v2.jpg");
     background-position: 55% 20%;
   }
 
