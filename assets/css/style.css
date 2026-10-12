@@ -502,6 +502,10 @@ h1.page-label {
   margin: 0;
 }
 
+.page-intro .lede + .lede {
+  margin-top: 1em;
+}
+
 .split {
   display: grid;
   grid-template-columns: 1fr 1fr;
