@@ -361,14 +361,14 @@ p {
   position: relative;
   display: flex;
   align-items: center;
-  min-height: clamp(460px, 62vh, 620px);
+  min-height: clamp(500px, 74vh, 780px);
   padding: 48px 0;
 }
 
 .hero-photo {
   position: absolute;
   inset: 0;
-  background: #8aa4b8 url("../img/hero.jpg") right 30% / cover no-repeat;
+  background: #8aa4b8 url("../img/hero.jpg") right 35% / cover no-repeat;
 }
 
 .hero .container {
@@ -421,7 +421,7 @@ p {
     height: 380px;
     /* phones use the portrait photo */
     background-image: url("../img/noah.jpg");
-    background-position: 50% 0;
+    background-position: 55% 20%;
   }
 
   .hero-card {
