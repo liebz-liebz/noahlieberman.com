@@ -20,7 +20,7 @@ Every spot that needs real content is marked with an `<!-- EDIT: ... -->` commen
 - **Photos:** `assets/img/hero.jpg` is the wide home-page banner (keep yourself on the right side; the intro card
   sits on the left), `assets/img/noah.jpg` is the banner on phones, and `assets/img/monkey.jpg` is used in "About me"
   and on the Bio page. Save new photos over these files to swap them.
-- **Book covers:** `assets/img/god.jpg`, `fantasy.jpg`, `europe1.jpg`, `europe2.jpg` (cut from screenshots of the old
+- **Book covers:** `assets/img/god.jpg`, `fantasy.jpg`, `europe1.jpg`, `europe2.jpg`.
   site; save the original cover files over them for sharper images).
 - **Links:** Amazon, Google Drive (free ebooks), email and social links live in `books.html`, `index.html` and the
   shared header/footer | search for the URL to change one.
