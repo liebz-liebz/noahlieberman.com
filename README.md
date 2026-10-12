@@ -24,7 +24,7 @@ Every spot that needs real content is marked with an `<!-- EDIT: ... -->` commen
 - **Free ebooks:** put the file in `assets/books/` (e.g. `assets/books/free-book.pdf`) and point the download button at it.
 - **Your photo:** drop it in `assets/img/` (e.g. `noah.jpg`, portrait orientation works best) and change
   `src="assets/img/photo-placeholder.svg"` to `src="assets/img/noah.jpg"` on the home and about pages.
-- **Socials:** paste your profile URLs into the social icon links (header of each page's footer, home hero, about page).
+- **Socials:** paste your profile URLs into the social icon links (every page's footer, the home page hero and the about page).
 - **Stats:** the `XX` / `XXK+` numbers on the home and partner pages are placeholders for your real numbers.
 - **Email:** the site uses `hello@noahlieberman.com` as a placeholder — find and replace it with your real address.
 - **Colours / fonts:** change the variables at the top of `assets/css/style.css`.
