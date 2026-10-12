@@ -800,31 +800,8 @@ div.cover {
   color: var(--accent-dark);
 }
 
-.facts {
-  list-style: none;
-  padding: 0;
-  margin: 32px 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
 
-.facts li {
-  background: var(--sand);
-  border-radius: 16px;
-  padding: 16px 18px;
-  font-size: 0.9rem;
-  color: var(--muted);
-}
 
-.facts b {
-  display: block;
-  font-family: var(--serif);
-  font-variation-settings: "SOFT" 100;
-  font-weight: 500;
-  font-size: 1.3rem;
-  color: var(--ink);
-}
 
 @media (max-width: 900px) {
   .about,
