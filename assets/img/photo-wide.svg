@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efe7dc"/><stop offset="1" stop-color="#e2d6c6"/></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <g fill="#d3c4b0"><circle cx="1060" cy="360" r="120"/><path d="M850 900c0-170 94-290 210-290s210 120 210 290z"/></g>
+  <text x="1060" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="6" fill="#a8977f">YOUR PHOTO</text>
+</svg>
