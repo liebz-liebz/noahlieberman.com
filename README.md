@@ -17,9 +17,9 @@ Shared styles are in `assets/css/style.css`; the small script in `assets/js/main
 
 Every spot that needs real content is marked with an `<!-- EDIT: ... -->` comment. Search for `EDIT:` to find them all.
 
-- **Photos:** `assets/img/hero-v3.jpg` is the home-page banner photo (it sits on the right and fades into `hero-blur.jpg` behind the intro card
-  sits on the left), `assets/img/noah-v2.jpg` is the banner on phones, and `assets/img/monkey.jpg` is the photo
-  on the Bio page. Save new photos over these files to swap them.
+- **Photos:** `assets/img/hero-v3.jpg` is the home-page banner photo. It sits on the right and fades into
+  `hero-blur.jpg` behind the intro card. `assets/img/noah-v2.jpg` is the banner on phones, and
+  `assets/img/monkey.jpg` is the photo on the Bio page. Save new photos over these files to swap them.
 - **Book covers:** `assets/img/cover-god.jpg`, `cover-fantasy.jpg`, `cover-europe1.jpg`, `cover-europe2.jpg` (full-quality originals, resized to 720px wide).
 - **Links:** Amazon, Google Drive (free ebooks), email and social links live in `books.html`, `index.html` and the
   shared header/footer. Search for the URL to change one.
