@@ -368,7 +368,7 @@ p {
 .hero-photo {
   position: absolute;
   inset: 0;
-  background: #8aa4b8 url("../img/hero-v4.jpg") right 35% / cover no-repeat;
+  background: #8aa4b8 url("../img/hero-v5.jpg") right 30% / cover no-repeat;
 }
 
 .hero .container {
@@ -378,7 +378,7 @@ p {
 
 .hero-card {
   position: relative;
-  max-width: 540px;
+  max-width: 600px;
   background: #fff;
   border-radius: var(--radius);
   padding: 36px 40px 34px;
