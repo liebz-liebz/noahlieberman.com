@@ -364,7 +364,7 @@ p {
 .hero-photo {
   position: absolute;
   inset: 0;
-  background: #efe7dc url("../img/photo-wide.svg") center / cover no-repeat;
+  background: #6f8a5c url("../img/hero.jpg") right center / cover no-repeat;
 }
 
 .hero .container {
@@ -415,6 +415,7 @@ p {
   .hero-photo {
     position: relative;
     height: 360px;
+    background-position: 69% center;
   }
 
   .hero-card {
