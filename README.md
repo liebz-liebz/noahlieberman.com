@@ -39,11 +39,15 @@ python3 -m http.server 8000
 # then open http://localhost:8000
 ```
 
-## Hosting & domain
+## Hosting
 
-Any static host works. Easy free options:
+Served by GitHub Pages from the `main` branch at **https://noahlieberman.com** (the `CNAME` file sets the custom domain).
+DNS for the domain points at GitHub Pages:
 
-- **GitHub Pages:** repo Settings → Pages → deploy from the `main` branch. Then add `noahlieberman.com` as the custom domain.
-- **Netlify / Cloudflare Pages:** connect this repo, leave the build command empty, publish directory `/`.
-
-Each host gives you the DNS records to add at your domain registrar to point `noahlieberman.com` at the site.
+| Type | Host | Value |
+| --- | --- | --- |
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | liebz-liebz.github.io |
