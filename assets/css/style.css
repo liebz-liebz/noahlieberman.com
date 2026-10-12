@@ -482,6 +482,21 @@ p {
   margin-bottom: 0;
 }
 
+/* small orange page title (Bio page) */
+.page-intro--label {
+  padding: 56px 0 28px;
+}
+
+h1.page-label {
+  font-family: var(--sans);
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0;
+}
+
 .page-intro .lede {
   max-width: 34em;
   margin: 0;
