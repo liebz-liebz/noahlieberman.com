@@ -22,11 +22,8 @@ Every spot that needs real content is marked with an `<!-- EDIT: ... -->` commen
   and on the Bio page. Save new photos over these files to swap them.
 - **Book covers:** `assets/img/god.jpg`, `fantasy.jpg`, `europe1.jpg`, `europe2.jpg` (cut from screenshots of the old
   site; save the original cover files over them for sharper images).
-- **Buy links:** paste the Amazon URLs into the `href="#"` on the Paperback / Kindle buttons in `books.html`.
-- **Free ebooks:** Europe I links to its Google Drive file. For Europe II, paste its link (or put the file in
-  `assets/books/`) into the "Download free" buttons on `books.html` and the featured book on `index.html`.
-- **Socials:** paste your Instagram and LinkedIn URLs into the icon links (footer of each page, and the Bio page).
-- **Email:** the site uses `hello@noahlieberman.com` as a placeholder — find and replace it with your real address.
+- **Links:** Amazon, Google Drive (free ebooks), email and social links live in `books.html`, `index.html` and the
+  shared header/footer — search for the URL to change one.
 - **Colours / fonts:** change the variables at the top of `assets/css/style.css`.
 
 The header and footer are repeated in each page, so a change to the nav or footer needs to be made in all four files.
