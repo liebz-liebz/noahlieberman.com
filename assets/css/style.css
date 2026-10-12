@@ -364,7 +364,7 @@ p {
 .hero-photo {
   position: absolute;
   inset: 0;
-  background: #efe7dc url("../img/photo-wide.svg") center / cover no-repeat;
+  background: #6f8a5c url("../img/hero.jpg") right center / cover no-repeat;
 }
 
 .hero .container {
@@ -414,7 +414,10 @@ p {
 
   .hero-photo {
     position: relative;
-    height: 360px;
+    height: 380px;
+    /* phones use the portrait photo */
+    background-image: url("../img/noah.jpg");
+    background-position: 50% 0;
   }
 
   .hero-card {
