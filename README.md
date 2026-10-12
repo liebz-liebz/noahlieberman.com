@@ -18,11 +18,11 @@ Shared styles are in `assets/css/style.css`; the small script in `assets/js/main
 Every spot that needs real content is marked with an `<!-- EDIT: ... -->` comment. Search for `EDIT:` to find them all.
 
 - **Photos:** `assets/img/hero.jpg` is the wide home-page banner (keep yourself on the right side; the intro card
-  sits on the left), `assets/img/noah.jpg` is the banner on phones, and `assets/img/monkey.jpg` is used in "About me"
-  and on the Bio page. Save new photos over these files to swap them.
+  sits on the left), `assets/img/noah.jpg` is the banner on phones, and `assets/img/monkey.jpg` is the photo
+  on the Bio page. Save new photos over these files to swap them.
 - **Book covers:** `assets/img/god.jpg`, `fantasy.jpg`, `europe1.jpg`, `europe2.jpg` (full-quality originals, resized to 720px wide).
 - **Links:** Amazon, Google Drive (free ebooks), email and social links live in `books.html`, `index.html` and the
-  shared header/footer | search for the URL to change one.
+  shared header/footer. Search for the URL to change one.
 - **Colours / fonts:** change the variables at the top of `assets/css/style.css`.
 
 The header and footer are repeated in each page, so a change to the nav or footer needs to be made in all four files.
