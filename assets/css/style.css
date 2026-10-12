@@ -414,8 +414,10 @@ p {
 
   .hero-photo {
     position: relative;
-    height: 360px;
-    background-position: 69% center;
+    height: 380px;
+    /* phones use the portrait photo */
+    background-image: url("../img/noah.jpg");
+    background-position: 50% 0;
   }
 
   .hero-card {
