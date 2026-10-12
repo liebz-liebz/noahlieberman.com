@@ -18,7 +18,7 @@
 // Contact form: no server needed. Builds an email to the address in the
 // form's data-mailto attribute and opens the visitor's mail app.
 // (To collect submissions without email, give the <form> an action="" pointing
-// at a form service such as Formspree — then this script steps aside.)
+// at a form service such as Formspree, and this script steps aside.)
 (function () {
   var forms = document.querySelectorAll("form[data-mailto]");
   forms.forEach(function (form) {
