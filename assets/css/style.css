@@ -363,22 +363,12 @@ p {
   align-items: center;
   min-height: clamp(500px, 74vh, 780px);
   padding: 48px 0;
-  overflow: hidden;
-  /* soft, blurred scenery fills the left side behind the card */
-  background: #8aa4b8 url("../img/hero-blur.jpg") left center / cover no-repeat;
 }
 
-/* the photo sits on the right at full height and fades in from the left,
-   so Noah stays on the right whatever the screen width */
 .hero-photo {
   position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  aspect-ratio: 1800 / 1125;
-  background: url("../img/hero-v3.jpg") center / cover no-repeat;
-  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 28%);
-  mask-image: linear-gradient(to right, transparent 0, #000 28%);
+  inset: 0;
+  background: #8aa4b8 url("../img/hero-v4.jpg") right 35% / cover no-repeat;
 }
 
 .hero .container {
@@ -388,7 +378,7 @@ p {
 
 .hero-card {
   position: relative;
-  max-width: 580px;
+  max-width: 540px;
   background: #fff;
   border-radius: var(--radius);
   padding: 36px 40px 34px;
@@ -410,16 +400,10 @@ p {
     display: block;
     min-height: 0;
     padding: 0;
-    overflow: visible;
-    background: none;
   }
 
   .hero-photo {
     position: relative;
-    width: 100%;
-    aspect-ratio: auto;
-    -webkit-mask-image: none;
-    mask-image: none;
     height: 380px;
     /* phones use the portrait photo */
     background-image: url("../img/noah-v2.jpg");
