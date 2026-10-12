@@ -8,34 +8,35 @@ Author website for Noah Lieberman. Plain HTML + CSS — no build step, no framew
 | --- | --- |
 | `index.html` | Home |
 | `books.html` | Books, where to buy them, free ebooks, bookstore enquiries |
-| `advertisers.html` | "Partner With Me": sponsored free-ebook program, audience stats, enquiry form |
-| `about.html` | Bio |
+| `advertisers.html` | Sponsored free-ebook program + enquiry form |
+| `bio.html` | Bio |
 
-Shared styles are in `assets/css/style.css`; the small script in `assets/js/main.js` handles the mobile menu and the forms.
+Shared styles are in `assets/css/style.css`; the small script in `assets/js/main.js` handles the contact form.
 
 ## Editing content
 
 Every spot that needs real content is marked with an `<!-- EDIT: ... -->` comment. Search for `EDIT:` to find them all.
 
+- **Photos:** put your photos in `assets/img/`, then:
+  - **Home hero (desktop):** in `assets/css/style.css`, change `hero-placeholder.svg` to your wide photo
+    (e.g. `hero.jpg`). A landscape shot with you on the right side works best — the name card and button sit on the left.
+  - **Home hero (phones):** in the same file, change `portrait-placeholder.svg` to a portrait crop (e.g. `noah.jpg`).
+  - **Bio page:** change `src="assets/img/portrait-placeholder.svg"` in `bio.html`.
 - **Book covers:** the coloured covers are placeholders. Put cover images in `assets/img/` and replace a placeholder
   `<div class="cover cover--1">…</div>` with `<img class="cover" src="assets/img/my-cover.jpg" alt="Title cover">`.
-- **Buy links:** paste Amazon / Kindle / Audible URLs into the `href="#"` on each button in `books.html`.
+- **Buy links:** paste Amazon / Kindle URLs into the `href="#"` on each button in `books.html`.
 - **Adding a book:** copy an `<article class="book">…</article>` block in `books.html` and edit it.
-- **Free ebooks:** put the file in `assets/books/` (e.g. `assets/books/free-book.pdf`) and point the download button at it.
-- **Your photo:** drop it in `assets/img/` (e.g. `noah.jpg`, portrait orientation works best) and change
-  `src="assets/img/photo-placeholder.svg"` to `src="assets/img/noah.jpg"` on the home and about pages.
-- **Socials:** paste your profile URLs into the social icon links (every page's footer, the home page hero and the about page).
-- **Stats:** the `XX` / `XXK+` numbers on the home and partner pages are placeholders for your real numbers.
+- **Free ebooks:** put the file in `assets/books/` (e.g. `assets/books/free-book.pdf`) and point the download buttons at it.
+- **Socials:** paste your Instagram and LinkedIn URLs into the icon links (header and footer of each page).
 - **Email:** the site uses `hello@noahlieberman.com` as a placeholder — find and replace it with your real address.
 - **Colours / fonts:** change the variables at the top of `assets/css/style.css`.
 
 The header and footer are repeated in each page, so a change to the nav or footer needs to be made in all four files.
 
-## Forms
+## Contact form
 
-The sponsorship enquiry form and the newsletter signup open the visitor's email app with their details pre-filled (no server needed). To collect submissions
-directly instead, give the `<form>` an `action="..."` pointing at a service — your newsletter provider
-(Beehiiv, Substack, ConvertKit) for the signup, or [Formspree](https://formspree.io) for the enquiry form.
+The sponsorship enquiry form opens the visitor's email app with their details pre-filled (no server needed). To collect
+submissions directly instead, give the `<form>` an `action="..."` pointing at a service like [Formspree](https://formspree.io).
 
 ## Preview locally
 
