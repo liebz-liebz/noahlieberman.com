@@ -1,6 +1,6 @@
 # noahlieberman.com
 
-Author website for Noah Lieberman. Plain HTML + CSS | no build step, no framework.
+Author website for Noah Lieberman. Plain HTML + CSS, with no build step or framework.
 
 ## Pages
 
