@@ -440,6 +440,10 @@ p {
   padding-top: 0;
 }
 
+.section-short {
+  padding-bottom: 72px;
+}
+
 .sand {
   background: var(--sand);
 }
