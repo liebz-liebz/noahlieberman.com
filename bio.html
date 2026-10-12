@@ -11,7 +11,7 @@
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Alegreya:wght@400&family=Figtree:wght@700&family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,100;1,9..144,400..700,100&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -19,34 +19,52 @@
 
   <header class="site-header">
     <div class="container">
-      <a class="site-name" href="index.html">Noah Lieberman</a>
-      <nav aria-label="Main">
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="books.html">Books</a></li>
-          <li><a href="advertisers.html">Advertisers</a></li>
-          <li><a href="bio.html" aria-current="page">Bio</a></li>
-        </ul>
+      <a class="wordmark" href="index.html">Noah Lieberman</a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="books.html">Books</a>
+        <a href="advertisers.html">Advertisers</a>
+        <a href="bio.html" aria-current="page">Bio</a>
+        <a class="btn btn-primary" href="books.html#free">Get the free book</a>
       </nav>
-      <div class="socials header-socials">
-        <!-- EDIT: your profile URLs -->
-        <a href="#" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
-        <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg></a>
+      <div class="header-actions">
+        <a class="btn btn-primary header-cta" href="books.html#free">Free book</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       </div>
     </div>
   </header>
 
   <main id="main">
 
-    <section class="bio">
-      <!-- EDIT: replace assets/img/bio.jpg with the original photo -->
-      <img class="bio-photo" src="assets/img/bio.jpg" alt="Noah taking a selfie with a monkey">
-      <div class="bio-text">
-        <div>
-          <h1>BIO</h1>
-          <p>Noah Lieberman grew up in Winnipeg, Canada. He believes that books should be free for everyone, and is trying his hardest to make that happen.</p>
+    <section class="page-intro">
+      <div class="container">
+        <span class="eyebrow">Bio</span>
+        <h1>About <em>Noah.</em></h1>
+      </div>
+    </section>
+
+    <section class="section section-flush">
+      <div class="container bio-grid">
+        <img class="portrait" src="assets/img/monkey.jpg" alt="Noah taking a selfie with a monkey">
+        <div class="prose">
+          <p class="lede">Noah Lieberman grew up in Winnipeg, Canada. He believes that books should be free for everyone, and is trying his hardest to make that happen.</p>
           <p>Noah graduated from the University of Manitoba in 2022. His passions include sports, travel, philosophy, and studying the universe. He plays floor hockey in the winter, and baseball in the summer. He's also been to 22 countries!</p>
           <p>Noah has published four books so far, and has plans to write more. He also works with other authors to publish their books successfully.</p>
+          <ul class="facts">
+            <li><b>Winnipeg</b>Hometown</li>
+            <li><b>U of Manitoba</b>Class of 2022</li>
+            <li><b>4 books</b>Published so far</li>
+            <li><b>22 countries</b>And counting</li>
+          </ul>
+          <div class="pull-quote">&ldquo;Books should be free for everyone.&rdquo;</div>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="books.html">See my books</a>
+            <a class="btn btn-quiet" href="mailto:hello@noahlieberman.com">Get in touch</a>
+          </div>
+          <div class="socials">
+        <!-- EDIT: your profile URLs -->
+        <a href="#" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg></a>
+      </div>
         </div>
       </div>
     </section>
@@ -55,14 +73,21 @@
 
   <footer class="site-footer">
     <div class="container">
-      <a class="site-name" href="index.html">Noah Lieberman</a>
-      <div class="socials">
+      <div>
+        <a class="wordmark" href="index.html">Noah Lieberman</a>
+        <div class="socials">
         <!-- EDIT: your profile URLs -->
         <a href="#" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
         <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg></a>
       </div>
-      <p>&copy; <span id="year">2026</span> by Noah Lieberman &middot; <a href="mailto:hello@noahlieberman.com">hello@noahlieberman.com</a></p>
-      <p>*All pictures taken of or by Noah</p>
+      </div>
+      <nav class="nav" aria-label="Footer">
+        <a href="books.html">Books</a>
+        <a href="advertisers.html">Advertisers</a>
+        <a href="bio.html">Bio</a>
+        <a href="mailto:hello@noahlieberman.com">Contact</a>
+      </nav>
+      <p class="fine">&copy; <span id="year">2026</span> Noah Lieberman &middot; All pictures taken of or by Noah</p>
     </div>
   </footer>
 
