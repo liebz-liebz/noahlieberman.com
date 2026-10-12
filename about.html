@@ -4,11 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About — Noah Lieberman</title>
-  <meta name="description" content="About Noah Lieberman, author.">
+  <meta name="description" content="About Noah Lieberman, author and creator.">
+  <meta property="og:title" content="About — Noah Lieberman">
+  <meta property="og:description" content="About Noah Lieberman, author and creator.">
+  <meta property="og:type" content="website">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -16,104 +19,114 @@
 
   <header class="site-header">
     <nav class="container" aria-label="Main">
-      <a class="brand" href="index.html">Noah Lieberman</a>
+      <a class="brand" href="index.html">Noah Lieberman<span></span></a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
         <li><a href="books.html">Books</a></li>
-        <li><a href="advertisers.html">For Advertisers</a></li>
+        <li><a href="books.html#free">Free Books</a></li>
+        <li><a href="advertisers.html">Partner With Me</a></li>
         <li><a href="about.html" aria-current="page">About</a></li>
+        <li class="nav-cta"><a href="#newsletter">Join the newsletter</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main">
 
-    <section class="page-head">
-      <div class="container">
-        <span class="eyebrow">About</span>
-        <h1>About Noah</h1>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container about-grid">
-        <aside>
-          <!-- EDIT: replace with <img class="portrait" src="assets/img/noah.jpg" alt="Noah Lieberman"> -->
-          <div class="portrait" role="img" aria-label="Photo of Noah Lieberman">NL</div>
-
-          <!-- EDIT: quick facts — change or delete any row -->
-          <ul class="facts">
-            <li><span>Based in</span><span>City, Country</span></li>
-            <li><span>Books</span><span>X published</span></li>
-            <li><span>Formats</span><span>Print · Ebook · Audio</span></li>
-            <li><span>Find me</span><span><a href="#">Amazon</a></span></li>
-          </ul>
-        </aside>
-
-        <!-- EDIT: your full bio goes here -->
-        <div class="prose">
-          <p class="lede">Your bio's opening line goes here — a single sentence that sums you up.</p>
-
-          <p>This is where the full bio goes. A good author bio usually covers where you're from, what got you writing, and what your books are about. Keep it in the first person (like this) for a personal feel, or switch to third person for a more formal tone.</p>
-
-          <p>A second paragraph can cover your path as a writer — your first book, selling in stores, recording the audiobook, and the sponsored free editions.</p>
-
-          <blockquote>An optional pull quote — something you believe about writing, or a line readers often quote back to you.</blockquote>
-
-          <p>A closing paragraph about what you're working on now, and what you do when you're not writing.</p>
-
-          <div class="btn-row mt-2">
-            <a class="btn btn-primary" href="books.html">See my books</a>
-            <a class="btn btn-outline" href="mailto:hello@noahlieberman.com">Get in touch</a>
+    <section class="hero">
+      <div class="container about-hero">
+        <div class="photo-wrap">
+          <!-- EDIT: put your photo in assets/img/ and change src, e.g. src="assets/img/noah.jpg" -->
+          <img class="photo" src="assets/img/photo-placeholder.svg" alt="Noah Lieberman">
+          <div class="sticker sticker--bl">
+            <div class="sticker-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5a2 2 0 0 1 2-2h14v16H6.5A2.5 2.5 0 0 0 4 21.5"/><path d="M20 19v3H6.5A2.5 2.5 0 0 1 4 19.5"/></svg></div>
+            <div><strong>XX books</strong><small>and counting</small></div>
           </div>
+        </div>
+        <div>
+          <span class="kicker">About</span>
+          <h1>The <span class="mark">short</span> version.</h1>
+          <!-- EDIT: your bio -->
+          <div class="prose">
+            <p class="lede">Your bio's opening line goes here &mdash; one sentence that sums you up.</p>
+            <p>This is where your story goes: where you're from, what got you writing, and what you make content about. Keep it first person and conversational &mdash; the way you'd talk on camera.</p>
+            <p>A second paragraph can cover the journey: the first book, getting into stores, recording the audiobook, and teaming up with brands to give books away for free.</p>
+          </div>
+          <!-- EDIT: paste your profile URLs into each href (delete any you don't use) -->
+        <div class="socials">
+          <a href="#" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="TikTok" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 3c.4 2.3 1.9 3.9 4.1 4.1v3.2c-1.5.1-2.9-.4-4.1-1.2v6.1A6 6 0 1 1 10.6 9.2v3.3a2.8 2.8 0 1 0 2.8 2.8V3h3.2z"/></svg></a>
+          <a href="#" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg></a>
+          <a href="#" aria-label="X (Twitter)" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.2-8.3L2 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg></a>
+          <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg></a>
+        </div>
         </div>
       </div>
     </section>
 
-    <!-- ========== PRESS / CONTACT ========== -->
-    <section class="section section-alt">
-      <div class="container cta-band">
-        <span class="eyebrow">Press, events &amp; bookstores</span>
-        <h2>Say hello</h2>
-        <p class="lede">For interviews, readings, bookstore orders, or anything else, send me an email.</p>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="mailto:hello@noahlieberman.com">hello@noahlieberman.com</a>
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="prose" style="margin: 0 auto;">
+          <!-- EDIT: optional pull quote -->
+          <blockquote>&ldquo;An optional pull quote &mdash; something you believe, or a line people quote back to you.&rdquo;</blockquote>
+          <p>A closing paragraph about what you're working on now, and what you do when you're not writing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section on-dark">
+      <div class="container split">
+        <div>
+          <span class="kicker">Press, podcasts &amp; events</span>
+          <h2>Let's make something.</h2>
+        </div>
+        <div>
+          <p class="lede">For interviews, podcasts, speaking, bookstore orders, or collaborations &mdash; my inbox is open.</p>
+          <div class="btn-row mt-2">
+            <a class="btn btn-accent" href="mailto:hello@noahlieberman.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/></svg> hello@noahlieberman.com</a>
+          </div>
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer on-dark" id="newsletter">
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-top">
         <div>
-          <a class="brand" href="index.html">Noah Lieberman</a>
-          <p>Author. Books in paperback, ebook, and audio.</p>
+          <span class="kicker">The newsletter</span>
+          <p class="footer-cta">New books, free editions, and what I'm working on. Straight to your inbox.</p>
         </div>
-        <div>
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="books.html">Books</a></li>
-            <li><a href="books.html#free">Free ebooks</a></li>
-            <li><a href="advertisers.html">For Advertisers</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Find me</h4>
-          <ul>
-            <li><a href="#">Amazon author page</a></li>
-            <li><a href="#">Audible</a></li>
-            <li><a href="#">Goodreads</a></li>
-            <li><a href="mailto:hello@noahlieberman.com">Email</a></li>
-          </ul>
-        </div>
+        <!-- EDIT: to use a newsletter service (Beehiiv, Substack, ConvertKit…), set action="" to its signup URL.
+             Until then, signing up sends you an email with the subscriber's address. -->
+        <form class="inline-form" data-newsletter data-mailto="hello@noahlieberman.com">
+          <label class="skip-link" for="nl-email">Email address</label>
+          <input id="nl-email" name="Email" type="email" placeholder="you@email.com" autocomplete="email" required>
+          <button class="btn btn-accent" type="submit">Subscribe</button>
+        </form>
       </div>
-      <div class="footer-bottom">&copy; <span id="year">2026</span> Noah Lieberman. All rights reserved.</div>
+      <p class="footer-name">Noah Lieberman</p>
+      <div class="footer-bottom">
+        <!-- EDIT: paste your profile URLs into each href (delete any you don't use) -->
+        <div class="socials">
+          <a href="#" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="TikTok" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 3c.4 2.3 1.9 3.9 4.1 4.1v3.2c-1.5.1-2.9-.4-4.1-1.2v6.1A6 6 0 1 1 10.6 9.2v3.3a2.8 2.8 0 1 0 2.8 2.8V3h3.2z"/></svg></a>
+          <a href="#" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg></a>
+          <a href="#" aria-label="X (Twitter)" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.2-8.3L2 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg></a>
+          <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg></a>
+        </div>
+        <ul class="footer-links">
+          <li><a href="books.html">Books</a></li>
+          <li><a href="books.html#free">Free Books</a></li>
+          <li><a href="advertisers.html">Partner With Me</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="mailto:hello@noahlieberman.com">Contact</a></li>
+        </ul>
+        <span>&copy; <span id="year">2026</span> Noah Lieberman</span>
+      </div>
     </div>
   </footer>
 

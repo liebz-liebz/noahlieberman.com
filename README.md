@@ -8,10 +8,10 @@ Author website for Noah Lieberman. Plain HTML + CSS — no build step, no framew
 | --- | --- |
 | `index.html` | Home |
 | `books.html` | Books, where to buy them, free ebooks, bookstore enquiries |
-| `advertisers.html` | Sponsored free-ebook program + enquiry form |
+| `advertisers.html` | "Partner With Me": sponsored free-ebook program, audience stats, enquiry form |
 | `about.html` | Bio |
 
-Shared styles are in `assets/css/style.css`; the small script in `assets/js/main.js` handles the mobile menu and the contact form.
+Shared styles are in `assets/css/style.css`; the small script in `assets/js/main.js` handles the mobile menu and the forms.
 
 ## Editing content
 
@@ -22,17 +22,20 @@ Every spot that needs real content is marked with an `<!-- EDIT: ... -->` commen
 - **Buy links:** paste Amazon / Kindle / Audible URLs into the `href="#"` on each button in `books.html`.
 - **Adding a book:** copy an `<article class="book">…</article>` block in `books.html` and edit it.
 - **Free ebooks:** put the file in `assets/books/` (e.g. `assets/books/free-book.pdf`) and point the download button at it.
-- **Photo:** replace the `NL` placeholder with `<img class="portrait" src="assets/img/noah.jpg" alt="Noah Lieberman">`.
+- **Your photo:** drop it in `assets/img/` (e.g. `noah.jpg`, portrait orientation works best) and change
+  `src="assets/img/photo-placeholder.svg"` to `src="assets/img/noah.jpg"` on the home and about pages.
+- **Socials:** paste your profile URLs into the social icon links (header of each page's footer, home hero, about page).
+- **Stats:** the `XX` / `XXK+` numbers on the home and partner pages are placeholders for your real numbers.
 - **Email:** the site uses `hello@noahlieberman.com` as a placeholder — find and replace it with your real address.
 - **Colours / fonts:** change the variables at the top of `assets/css/style.css`.
 
 The header and footer are repeated in each page, so a change to the nav or footer needs to be made in all four files.
 
-## Advertiser form
+## Forms
 
-The enquiry form opens the visitor's email app with their details pre-filled (no server needed). To collect submissions
-directly instead, point the form at a service like [Formspree](https://formspree.io) or use
-[Netlify Forms](https://docs.netlify.com/forms/setup/).
+The sponsorship enquiry form and the newsletter signup open the visitor's email app with their details pre-filled (no server needed). To collect submissions
+directly instead, give the `<form>` an `action="..."` pointing at a service — your newsletter provider
+(Beehiiv, Substack, ConvertKit) for the signup, or [Formspree](https://formspree.io) for the enquiry form.
 
 ## Preview locally
 
